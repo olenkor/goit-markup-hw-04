@@ -215,6 +215,37 @@ img{
 
  }
 
+ .benefits-item::before{
+    display: block;
+    content: "";
+    height: 120px;
+    background-size: 70px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--accent-bg-color);
+    margin-bottom: 30px;
+ }
+
+ .antenna-icon::before{
+    background-image: url('../images/icons/antenna.svg');
+
+ }
+
+.clock-icon::before{
+    background-image: url()
+
+}
+
+.diagram-icon::before{
+    background-image: url()
+
+}
+
+.astronaut-icon::before{
+    background-image: url()
+
+}
+
  .benefits-title{
     font-size: 14px;
     text-transform: uppercase;
