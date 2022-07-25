@@ -97,7 +97,7 @@ img{
     
 }
 
-.list-item:not(:last-child) {
+.nav-list-item:not(:last-child) {
     margin-right: 50px;
 }
 
@@ -219,17 +219,15 @@ img{
     display: block;
     content: "";
     height: 120px;
-    background-size: 70px;
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--accent-bg-color);
     margin-bottom: 30px;
+    background-image: url('../images/icons/sprite.svg#icon-antenna')
  }
 
- .antenna-icon::before{
-    background-image: url('../images/icons/antenna.svg');
-
- }
+ 
 
 .clock-icon::before{
     background-image: url()
@@ -346,6 +344,38 @@ img{
     color: var(--secondary-text-color);
   
     text-align: center;
+    margin-bottom: 16px;
+
+}
+
+.social-list{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.social-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+.social-list-link:hover,
+.social-list-link:focus{
+    background-color: var(--accent-color);
+}
+
+.social-list-link:hover .social-list-icon,
+.social-list-link:focus .social-list-icon{
+    fill: var(--light-text-color);
+}
+
+.social-list-icon{
+    fill: #AFB1B8;
 
 }
 
