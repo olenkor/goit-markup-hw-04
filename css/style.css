@@ -158,13 +158,29 @@ img{
     color: var(--accent-color);
 }
 
+.mail:before{
+    display: block;
+    content: "";
+    background-image: url('../images/icons/sprite.svg#icon-envelope');
+    
+}
+
+.phone::before{
+    display: block;
+    content: "";
+    background-image: url('../images/icons/sprite.svg#icon-phone');
+   
+
+}
 /*Webstudio hero*/
 
 .studio-hero{
-    background-color: var(--secondary-bg-color);
+    background-color: #C4C4C4;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/WebStudio/background.jpg'); 
+    background-size: cover;
 
 }
 
@@ -230,17 +246,17 @@ img{
  
 
 .clock-icon::before{
-    background-image: url()
+    background-image: url('../images/icons/sprite.svg#icon-clock')
 
 }
 
 .diagram-icon::before{
-    background-image: url()
+    background-image: url('../images/icons/sprite.svg#icon-diagram')
 
 }
 
 .astronaut-icon::before{
-    background-image: url()
+    background-image: url('../images/icons/sprite.svg#icon-astronaut')
 
 }
 
@@ -486,7 +502,49 @@ img{
 
 }
 
-/*footer*/
+/* Clients */
+
+
+
+.clients-list-link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+}
+
+.clients-list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.clients-list-icon{
+    fill: #AFB1B8;
+
+}
+
+.clients-list-link:hover,
+.clients-list-link:focus {
+    border-color: var(--accent-color)
+}
+
+.clients-list-icon:hover,
+.clients-list-icon:focus{
+    fill: var(--accent-color)
+}
+   
+    
+
+
+
+
+
+/*Footer*/
 
 .footer{
    background-color: var(--secondary-bg-color);
