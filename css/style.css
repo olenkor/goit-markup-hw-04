@@ -224,37 +224,16 @@ img{
 
  }
 
- .benefits-item::before{
-    display: block;
-    content: "";
-    height: 120px;
-    width: 270px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center ;
-    background-color: var(--accent-bg-color);
-    margin-bottom: 30px;
-    background-image: url('/images/icons/sprite.svg#icon-antenna');
-    background-size: 70px;
- }
-
  
 
- 
-
-.clock-icon::before{
-    background-image: url('/images/icons/clock.svg')
-
-}
-
-.diagram-icon::before{
-    background-image: url('/images/icons/diagram.svg')
-
-}
-
-.astronaut-icon::before{
-    background-image: url('/images/icons/astronaut.svg')
-
+ .benefits-icon-container{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ width: 270px;
+ height: 120px;
+ background-color: var(--accent-bg-color);
+ margin-bottom: 30px;
 }
 
  .benefits-title{
