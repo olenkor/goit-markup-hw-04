@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -19,46 +19,58 @@
   </head>
 
   <body>
-    <header class="header">
 
+    <header class="header">
+    
       <div class="container page-header-container">
         <nav class="header-nav">
-          <a class=" logo" href="./studio.html"><span class="accent">Web</span>Studio</a>
+          <a class="logo" href="./studio.html"><span class="accent">Web</span>Studio</a>
           <ul class="nav-list">
             <li class="list-item nav-list-item">
-              <a class="nav-link" href="./studio.html">Студия</a>
+              <a class="nav-link" href="./studio.html">Студія</a>
+            </li>
+            <li class="list-item list-item nav-list-item">
+              <a class="nav-link current" href="./index.html">Портфоліо</a>
             </li>
             <li class="list-item nav-list-item">
-              <a class="nav-link current" href="./index.html">Портфолио</a>
-            </li>
-            <li class="list-item nav-list-item">
-              <a class="nav-link" href="#">Контакты</a>
+              <a class="nav-link" href="#">Контакти</a>
             </li>
           </ul>
         </nav>
-        <ul class="nav-list">
-          <li class="list-item nav-list-item">
-            <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <ul class="nav-list contacts">
+          <li class="list-item nav-list-item ">
+            <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com
+              <svg class="contact-link-icon" width="16" height="12">
+                <use href="./images/icons/sprite.svg#icon-envelope"></use>
+              </svg>
+            </a>
           </li>
-          <li class="list-item nav-list-item"><a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="list-item nav-list-item ">
+            <a class="contacts-link" href="tel:+380961111111">+38 096 111 11 11
+              <svg class="contact-link-icon" width="10" height="16">
+                <use href="./images/icons/sprite.svg#icon-phone"></use>
+              </svg>
+            </a>
+          </li>
         </ul>
       </div>
-      
+    
     </header>
+
     <main>
       <section class="section portfolio-hero">
 
         <div class="container">
-          <h1 class="visually-hidden">Портфолио</h1>
+          <h1 class="visually-hidden">Портфоліо</h1>
           <ul class="filter-list">
             <li class="list filter-item">
               <button class="button accent-button" type="button"> Все</button>
             </li>
             <li class="list filter-item">
-              <button class="button" type="button">Веб-сайты</button>
+              <button class="button" type="button">Веб-сайти</button>
             </li>
             <li class="list filter-item">
-              <button class="button" type="button">Приложения</button>
+              <button class="button" type="button">ПДодатки</button>
             </li>
             <li class="list filter-item">
               <button class="button" type="button">Дизайн</button>
@@ -90,23 +102,23 @@
                   alt="Ресторан Seafood" width="370" /></a>
                   <div class="portfolio-description">
                     <h3 class="hero-subtitle">Ресторан Seafood</h3>
-                    <p class="hero-text">Приложение</p>
+                    <p class="hero-text">Додаток</p>
                   </div>
             </li>
             <li class="list portfolio-item">
               <a class="link" rel="preconnect" href="https://www.google.com/"><img class="portfolio-image" src="./images/Portfolio/prime.jpg"
-                  alt="Проект Prime" width="370" /></a>
+                  alt="Проєкт Prime" width="370" /></a>
                   <div class="portfolio-description">
-                    <h3 class="hero-subtitle">Проект Prime</h3>
+                    <h3 class="hero-subtitle">Проєкт Prime</h3>
                     <p class="hero-text">Маркетинг</p>
                   </div>
             </li>
             <li class="list portfolio-item">
               <a class="link" rel="preconnect" href="https://www.google.com/"><img class=""portfolio-image"" src="./images/Portfolio/boxes.jpg"
-                  alt="Проект Boxes" width="370" /></a>
+                  alt="Проєкт Boxes" width="370" /></a>
                   <div class="portfolio-description">
-                    <h3 class="hero-subtitle">Проект Boxes</h3>
-                    <p class="hero-text">Приложение</p>
+                    <h3 class="hero-subtitle">Проєкт Boxes</h3>
+                    <p class="hero-text">Додаток</p>
                   </div>
             </li>
             <li class="list portfolio-item">
@@ -118,9 +130,9 @@
             </li>
             <li class="list portfolio-item">
               <a class="link" rel="preconnect" href="https://www.google.com/"><img class=""portfolio-image"" src="./images/Portfolio/limitededition.jpg"
-                  alt="Издание Limited Edition" width="370" /></a>
+                  alt="Видання Limited Edition" width="370" /></a>
                   <div class="portfolio-description">
-                    <h3 class="hero-subtitle">Издание Limited Edition</h3>
+                    <h3 class="hero-subtitle">Видання Limited Edition</h3>
                     <p class="hero-text">Дизайн</p>
                   </div>
             </li>
@@ -136,7 +148,7 @@
                   alt="Growing Business" width="370" /></a>
                   <div class="portfolio-description">
                     <h3 class="hero-subtitle">Growing Business</h3>
-                    <p class="hero-text">Приложение</p>
+                    <p class="hero-text">Додаток</p>
                   </div>
             </li>
           </ul>
@@ -146,25 +158,63 @@
         
     </main>
     <footer class="footer">
-
-      <div class="container">
-        <a class="link logo" href="./index.html"><span class="accent">Web</span>Studio</a>
-        <address class="address">
-          <ul class="footer-contacts">
-            <li class="list-item map">
-              <a class="map" href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">г. Киев, пр-т Леси
-                Украинки, 26</a>
+    
+      <div class="container footer-wrapper">
+        <div class="wrapper-address">
+          <a class="link logo footer-logo" href="./index.html"><span class="accent">Web</span>Studio</a>
+          <address class="address">
+            <ul class="footer-contacts">
+              <li class="list footer-item map">
+                <a class="map" href="https://bit.ly/3pXMvUd" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+              </li>
+              <li class="list footer-item">
+                <a class="link footer-contacts" href="mailto:info@example.com">info@example.com</a>
+              </li>
+              <li class="list footer-item">
+                <a class="link footer-contacts" href="tel:+380961111111">+38 099 111 11 11</a>
+              </li>
+            </ul>
+          </address>
+    
+        </div>
+    
+        <div class="wrapper-social-links">
+          <h2 class="footer-title">приєднуйтесь</h2>
+          <ul class=" list social-list-footer">
+            <li class=" list-item social-list-item">
+              <a href="" class="social-list-link-footer">
+                <svg class="social-list-icon-footer" width="20" height="20">
+                  <use href="./images/icons/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
             </li>
-            <li class="list-item">
-              <a class="link footer-contacts" href="mailto:info@example.com">info@example.com</a>
+            <li class="list-item social-list-item">
+              <a href="" class="social-list-link-footer">
+                <svg class="social-list-icon-footer" width="20" height="20">
+                  <use href="./images/icons/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
             </li>
-            <li class="list-item">
-              <a class="link footer-contacts" href="tel:+380961111111">+38 099 111 11 11</a>
+            <li class=" list-item social-list-item">
+              <a href="" class="social-list-link-footer">
+                <svg class="social-list-icon-footer" width="20" height="20">
+                  <use href="./images/icons/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class=" list-item social-list-item">
+              <a href="" class="social-list-link-footer">
+                <svg class="social-list-icon-footer" width="20" height="20">
+                  <use href="./images/icons/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
             </li>
           </ul>
-        </address>
+    
+        </div>
+    
       </div>
-      
+    
     </footer>
   </body>
 </html>

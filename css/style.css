@@ -133,7 +133,7 @@ img{
 
 .nav-link:hover,
 .nav-link:focus {
-    color: var(--accent-color);
+   color: var(--accent-color);
 }
 
 .nav-link.current{
@@ -142,7 +142,7 @@ img{
 }
 
 .contacts-link{
-    display: block;
+    display: flex;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
@@ -151,27 +151,20 @@ img{
     text-decoration: none;
     padding-top: 31px;
     padding-bottom: 31px;
+    align-items: center;
+    flex-direction: row-reverse;
 }
 
-.contacts-link:hover,
-.contacts-link:focus{
+.contacts-link:hover, 
+.contacts-link:focus{ 
     color: var(--accent-color);
+ } 
+
+.contact-link-icon {
+    fill: currentColor;
+    margin-right: 10px;
 }
 
-.mail:before{
-    display: block;
-    content: "";
-    background-image: url('../images/icons/sprite.svg#icon-envelope');
-    
-}
-
-.phone::before{
-    display: block;
-    content: "";
-    background-image: url('../images/icons/sprite.svg#icon-phone');
-   
-
-}
 /*Webstudio hero*/
 
 .studio-hero{
@@ -235,28 +228,32 @@ img{
     display: block;
     content: "";
     height: 120px;
+    width: 270px;
     background-size: contain;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center ;
     background-color: var(--accent-bg-color);
     margin-bottom: 30px;
-    background-image: url('../images/icons/sprite.svg#icon-antenna')
+    background-image: url('/images/icons/antenna.svg');
+    background-size: 70px;
  }
 
  
 
+ 
+
 .clock-icon::before{
-    background-image: url('../images/icons/sprite.svg#icon-clock')
+    background-image: url('/images/icons/clock.svg')
 
 }
 
 .diagram-icon::before{
-    background-image: url('../images/icons/sprite.svg#icon-diagram')
+    background-image: url('/images/icons/diagram.svg')
 
 }
 
 .astronaut-icon::before{
-    background-image: url('../images/icons/sprite.svg#icon-astronaut')
+    background-image: url('/images/icons/astronaut.svg')
 
 }
 
@@ -548,8 +545,8 @@ img{
 
 .footer{
    background-color: var(--secondary-bg-color);
-   padding-top: 60px;
-   padding-bottom: 60px;
+   padding: 60px 0;
+   
 
 
 }
@@ -584,12 +581,18 @@ img{
 
 .footer-wrapper{
     display: flex;
+    align-items: baseline;
 
 }
+
+
 
 .wrapper-address{
     margin-right: 70px;
+ 
+    
 }
+
 
 .footer-title{
     font-size: 14px;
