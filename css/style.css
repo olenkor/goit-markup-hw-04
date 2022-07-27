@@ -234,7 +234,7 @@ img{
     background-position: center ;
     background-color: var(--accent-bg-color);
     margin-bottom: 30px;
-    background-image: url('/images/icons/antenna.svg');
+    background-image: url('/images/icons/sprite.svg#icon-antenna');
     background-size: 70px;
  }
 
