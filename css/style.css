@@ -416,7 +416,6 @@ border-radius: 4px;
 .portfolio-item {
     flex-basis: calc((100% - 60px) / 3);
     position: relative; 
-    overflow: hidden;
     cursor: pointer;
  
 }
@@ -436,7 +435,7 @@ border-radius: 4px;
     margin-bottom: 0px;
 }
 
-.portfolio-overlay{
+/* .portfolio-overlay{
     display: flex;
     align-items: center;
     position: absolute;
@@ -469,7 +468,7 @@ border-radius: 4px;
 .portfolio-item:focus .overlay-text{
     transform: translate(0%);
 
-}
+} */
 
 
 .portfolio-image{
